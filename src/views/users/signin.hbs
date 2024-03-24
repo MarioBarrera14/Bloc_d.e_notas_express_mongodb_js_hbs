@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Iniciar sesión</h3>
+        </div>
+        <img src="/img/CUADERNOTAPABLANDA3_xlarge.png" alt=""
+          class="imagen-centrada rounded-circle mx-auto d-block m-4">
+        <div class="card-body">
+          <form action="/users/signin" method="POST">
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" class="form-control" name="email" placeholder="Email" value="{{email}}" />
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control" name="password" placeholder="Contraseña"
+                value="{{password}}" />
+            </div>
+            <button class="btn btn-primary btn-block">Iniciar sesión</button>
+          </form>
+        </div>
+        <p class="text-center">¿Aún no tienes una cuenta?
+          <a href="/users/signup" class="text-info">Registrarse</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

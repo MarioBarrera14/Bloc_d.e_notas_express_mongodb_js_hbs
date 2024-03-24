@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  /* Un degradado bonito */
+}
+
+
+.logo {
+  width: 30%;
+}
+
+.imagen-centrada {
+  width: 40%;
+}
+
+.bg-black {
+  background: #1f3ec5;
+}
