@@ -21,9 +21,11 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(flash())
+
 // Global Variables
 app.use((req, res, next) => {
   res.locals.success_msg = req.flash("success_msg");
@@ -32,6 +34,7 @@ app.use((req, res, next) => {
   res.locals.user = req.user || null;
   next();
 });
+
 
 app.use(require('./routes/index.routes'))
 app.use(require('./routes/notes.routes'))
@@ -53,6 +56,9 @@ app.engine('.hbs', exphbs.engine({
 
 app.set('view engine', 'hbs'); // Utiliza app.set() para configurar el motor de vistas
 
-
+// Middleware para manejar errores 404
+app.use((req, res, next) => {
+  res.status(404).render('partials/error404'); // Renderiza la vista 'error404.hbs'
+});
 
 module.exports = app;

@@ -1,7 +1,5 @@
 const app = require('./server')
-const express = require('express');
 require('./database')
-
 
 // Iniciar servidor
 app.listen(app.get('PORT'), () => {

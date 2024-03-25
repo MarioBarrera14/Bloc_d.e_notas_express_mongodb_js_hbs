@@ -1,11 +1,11 @@
 {{#if error}}
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    {{error}}
+    {{errors}}
     <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
 </div>
 {{/if}}
 
-{{#each errors}}
+{{#each error}}
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
     {{text}}
     <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
