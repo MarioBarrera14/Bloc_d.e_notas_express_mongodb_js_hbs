@@ -61,4 +61,5 @@ app.use((req, res, next) => {
   res.status(404).render('partials/error404'); // Renderiza la vista 'error404.hbs'
 });
 
+
 module.exports = app;
