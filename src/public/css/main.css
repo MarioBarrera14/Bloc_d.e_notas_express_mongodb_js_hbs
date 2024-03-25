@@ -1,8 +1,6 @@
 body {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  /* Un degradado bonito */
+  background-image: url("/img/kobu-agency-ipARHaxETRk-unsplash.jpg");
 }
-
 
 .logo {
   width: 30%;
